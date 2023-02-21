@@ -9,18 +9,15 @@
     font-size: 18px;
     line-height: 21px;
 }
-
 body {
     margin: 0;
     position: relative;
 }
-
 .wrapper {
     width: 100vw;
     max-width: 1170px;
     margin: 0 auto;
 }
-
 .main {
     padding: 100px 0 58px;
     /* border: 1px solid black; */
@@ -29,6 +26,18 @@ body {
     flex-direction: column;
     gap: 50px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .wrapper {
+        width: 992px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .wrapper {
+        width: 280px;
+    }
+}
+
+
 
 
 /* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ UI elements ~ ~ ~ ~ ~ ~ ~ ~ ~ */
@@ -130,6 +139,8 @@ body {
         line-height: 15px;
     }
 }
+
+
 
 
 /* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ SOCIAL-MEDIA section ~ ~ ~ ~ ~ ~ ~ ~ ~ */
@@ -234,6 +245,7 @@ body {
 
 
 
+
 /* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ TABS section ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 .tabs-section {
     display: flex;
@@ -324,6 +336,70 @@ body {
     font-size: 18px;
     line-height: 21px;
 }
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .tabs-section__simple-tab {
+        max-width: 170px;
+    }
+    .tabs-section__content {
+        padding-left: 80px;
+        gap: 25px;
+    }
+    .tabs-section__content img {
+        height: 385px;
+    }
+    .tabs-section__description {
+        gap: 15px;
+    }
+    .tabs-section__title {
+        padding: 30px 0;
+
+        font-size: 24px;
+        line-height: 33px;
+    }
+    .tabs-section__text {
+        gap: 16px;
+
+        font-size: 14px;
+        line-height: 16px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .tabs-section__tabs {
+        justify-content: stretch;
+    }
+    .tabs-section__simple-tab {
+        max-width: auto;
+        height: 40px;
+    }
+    .tabs-section__content {
+        display: block;
+    
+        padding: 0 20px;
+        border: 1px solid #C6CBCD;
+    }
+    .tabs-section__content img {
+        display: none;
+    }
+    .tabs-section__left-part {
+        padding-bottom: 30px;
+        gap: 30px;
+    }
+    .tabs-section__title {
+        padding: 40px 0;
+
+        text-align: center;
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .tabs-section__text {
+        gap: 15px;
+
+        font-size: 13px;
+        line-height: 15px;
+    }
+}
+
+
 
 
 /* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ABOUT section ~ ~ ~ ~ ~ ~ ~ ~ ~ */
@@ -380,46 +456,7 @@ body {
 .card__text {
     text-align: center;
 }
-
-
-/* просто игрался */
 @media screen and (min-width: 1024px) and (max-width: 1439px) {
-
-    .wrapper {
-        width: 992px;
-    }
-
-
-/* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ TABS section ~ ~ ~ ~ ~ ~ ~ ~ ~ */
-    .tabs-section__simple-tab {
-        max-width: 170px;
-    }
-    .tabs-section__content {
-        padding-left: 80px;
-        gap: 25px;
-    }
-    .tabs-section__content img {
-        height: 385px;
-    }
-    .tabs-section__description {
-        gap: 15px;
-    }
-    .tabs-section__title {
-        padding: 30px 0;
-
-        font-size: 24px;
-        line-height: 33px;
-    }
-    .tabs-section__text {
-        gap: 16px;
-
-        font-size: 14px;
-        line-height: 16px;
-    }
-
-
-
-/* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ABOUT section ~ ~ ~ ~ ~ ~ ~ ~ ~ */
     .about-section {
         gap: 30px;
     }
@@ -446,51 +483,8 @@ body {
         font-size: 14px;
         line-height: 16px;
     }
-
 }
-
 @media screen and (max-width: 1023px) {
-    .wrapper {
-        width: 280px;
-    }
-
-/* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ TABS section ~ ~ ~ ~ ~ ~ ~ ~ ~ */
-    .tabs-section__tabs {
-        justify-content: stretch;
-    }
-    .tabs-section__simple-tab {
-        max-width: auto;
-        height: 40px;
-    }
-    .tabs-section__content {
-        display: block;
-    
-        padding: 0 20px;
-        border: 1px solid #C6CBCD;
-    }
-    .tabs-section__content img {
-        display: none;
-    }
-    .tabs-section__left-part {
-        padding-bottom: 30px;
-        gap: 30px;
-    }
-    .tabs-section__title {
-        padding: 40px 0;
-
-        text-align: center;
-        font-size: 18px;
-        line-height: 25px;
-    }
-    .tabs-section__text {
-        gap: 15px;
-
-        font-size: 13px;
-        line-height: 15px;
-    }
-
-
-/* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ ABOUT section ~ ~ ~ ~ ~ ~ ~ ~ ~ */
     .about-section {
         gap: 50px;
     }
@@ -509,8 +503,8 @@ body {
     .card__icon svg {
         transform: scale(0.8);
     }
-
 }
+
 
 
 
