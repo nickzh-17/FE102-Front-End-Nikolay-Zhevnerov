@@ -34,7 +34,6 @@ body {
 /* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ UI elements ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 /* ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ Button 3 ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ */
 .button-3 {
-    box-sizing: ;
     width: 270px;
     height: 58px;
 
@@ -131,6 +130,108 @@ body {
         line-height: 15px;
     }
 }
+
+
+/* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ SOCIAL-MEDIA section ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+.social-section {
+    background: #F8EFEF;
+}
+.social-section__wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+.social-section__description {
+    max-width: 470px;
+    flex: 1 1 470px;
+    padding: 15px 0;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.social-section__title {
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 33px;
+    color: #333333;
+}
+.social-section__paragraph {
+    color: #86878B;
+}
+.social-section__links {
+    cursor: pointer;
+
+    padding: 0;
+    align-self: center;
+    list-style-type: none;
+
+    display: flex;
+    justify-content: space-between;
+
+    max-width: 670px;
+    width: 100%;
+    flex: 1 1 670px;
+}
+.social-section__link > img:hover {
+    transform: scale(1.2);
+}
+.social-section__link > img:active {
+    transform: scale(1.1);
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+    .social-section__description {
+        max-width: 400px;
+    }
+    .social-section__title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .social-section__paragraph {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .social-section__links {
+        max-width: 570px;
+    }
+    .social-section__link > img {
+        width: 64px;
+    }
+}
+@media screen and (max-width: 1023px) {
+    .social-section__wrapper {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+
+        padding: 50px 0;
+    }
+    .social-section__description {
+        flex: 1 1 auto;
+        padding: 0;
+        max-width: 270px;
+    
+        gap: 30px;
+
+        text-align: center;
+    }
+    .social-section__title {
+        font-size: 18px;
+        line-height: 25px;
+    }
+    .social-section__paragraph {
+        font-size: 14px;
+        line-height: 16px;
+    }
+    .social-section__links {    
+        flex: 1 0 auto;
+    }
+    .social-section__link > img {
+        width: 26px;
+    }
+}
+
 
 
 /* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ TABS section ~ ~ ~ ~ ~ ~ ~ ~ ~ */
