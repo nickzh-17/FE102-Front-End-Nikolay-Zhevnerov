@@ -15,7 +15,72 @@
 </head>
 <body>
 
+    <header class="header">
+        <div class="header__wrapper wrapper">
+            <a href="#">
+                <img class="header__logo" src="./assets/icons/logo.svg" alt="logo">
+            </a>
+    
+            <nav class="navigation">
+                <a class="navigation__link" href="#features">
+                    <span class="navigation__link-text">Features</span>
+                </a>
+
+                <a class="navigation__link" href="#about">
+                    <span class="navigation__link-text">About</span>
+                </a>
+
+                <a class="navigation__link" href="#pricing">
+                    <span class="navigation__link-text">Pricing</span>
+                </a>
+
+                <a class="navigation__link" href="#reviews">
+                    <span class="navigation__link-text">Reviews</span>
+                </a>
+
+                <a class="navigation__link" href="#contact">
+                    <span class="navigation__link-text">Contact</span>
+                </a>
+            </nav>
+
+            <button 
+                class='burger__button burger__button--opened'
+                type='button' >
+                    <div class='line top-line' ></div>
+                    <div class='line middle-line' ></div>
+                    <div class='line bottom-line' ></div>
+            </button>
+
+        </div>
+    </header>
+
     <main class="main">
+            <section class="preview-section">
+                <div class="preview-section__wrapper wrapper">
+                    <div class="preview-section__content">
+                        <div class="preview-section__heading">
+                            <img class="preview-section__logo" src="./assets/icons/logo.svg" alt="logo">
+                            <h1 class="preview-section__title">MODERN AXURE TEMPLATE FOR BEAUTIFUL PROTOTYPES</h1>
+                        </div>
+                        <div class="preview-section__download">
+                            <p class="preview-section__description">Lorem ipsum dolor sit amet, consectetur adipiscing elit</p>
+                            <button class="button button-1">Download</button>
+                        </div>
+                    </div>
+                    <div class="preview-section__form form">
+                        <div class="form__wrapper">
+                            <h4 class="form__title">Try Your <span class="text-accent">FREE</span> Trial Today</h4>
+                            <form id="getStarted" class="form__form">
+                                <input type="text" placeholder="Name">
+                                <input type="email" placeholder="Email">
+                                <input type="password" placeholder="Password">
+                            </form>
+                        </div>
+                        <button type="submit" form="getStarted" class="button button-2">Get Started</button>
+                    </div>
+                </div>
+            </section>
+
             <section class="social-section">
                 <div class="social-section__wrapper wrapper">
                     <div class="social-section__description">
@@ -59,7 +124,7 @@
 
             </section>
 
-            <section class="tabs-section wrapper">
+            <section id="features" class="tabs-section wrapper">
                 <div class="tabs-section__tabs">
                     <div class="tabs-section__simple-tab tabs-section__simple-tab--active">
                         Tab 1
@@ -90,13 +155,13 @@
                                 </span>
                             </h5>
                         </div>
-                        <button class="button-3" type="button">Download</button>
+                        <button class="button button-3" type="button">Download</button>
                     </div>
                     <img src="./assets/images/new-york.jpg" alt="tabs-example">
                 </div>
             </section>
     
-            <section class="about-section wrapper">
+            <section id="about" class="about-section wrapper">
                 <div class="heading">
                     <h2 class="heading__title">Why this is awesome</h2>
                     <h5 class="heading__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit.</h5>
@@ -155,7 +220,7 @@
                 </div>
             </section>
 
-            <section class="pricing-section">
+            <section id="pricing" class="pricing-section">
                 <div class="pricing-section__wrapper wrapper">
                     <div class="heading">
                         <h2 class="heading__title">pricing options</h2>
