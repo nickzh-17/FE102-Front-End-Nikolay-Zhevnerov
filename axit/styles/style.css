@@ -211,7 +211,7 @@ input:focus-visible {
 	color: #86878b;
 }
 .heading--light .heading__title,
-.heading__text {
+.heading--light .heading__text {
 	color: white;
 }
 .heading--light .heading__title::after {
