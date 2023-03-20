@@ -84,6 +84,25 @@ input:focus-visible {
 	outline: none;
 }
 
+textarea {
+	resize: none;
+	background: transparent;
+	border: none;
+	border-bottom: 1px solid #bdbdbd;
+
+	font-family: 'Open Sans', sans-serif;
+	font-weight: 400;
+	font-size: 14px;
+	line-height: 19px;
+	color: #bdbdbd;
+}
+textarea::placeholder {
+	color: #bdbdbd;
+}
+textarea:focus-visible {
+	outline: none;
+}
+
 .button {
 	border: none;
 	cursor: pointer;
@@ -1273,6 +1292,61 @@ input:focus-visible {
 	}
 	.design-section__button {
 		width: 100%;
+	}
+}
+
+/* ! ~ ~ ~ ~ ~ ~ ~ ~ ~ ~ CONTACT US Section ~ ~ ~ ~ ~ ~ ~ ~ ~ */
+.contact-section {
+	margin-top: 50px;
+	margin-bottom: 50px;
+	display: flex;
+	flex-direction: column;
+	gap: 80px;
+}
+
+.contact-form {
+	display: flex;
+	flex-direction: column;
+	gap: 50px;
+	align-items: center;
+}
+.contact-form__fields {
+	width: 100%;
+	display: flex;
+	gap: 30px;
+}
+.contact-form__inputs {
+	flex: 1 0 auto;
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+.contact__textarea {
+	flex: 1 0 auto;
+	height: 200px;
+}
+
+@media screen and (min-width: 1024px) and (max-width: 1439px) {
+	.contact-section {
+		gap: 60px;
+	}
+	.contact-form__fields {
+		gap: 20px;
+	}
+}
+@media screen and (max-width: 1023px) {
+	.contact-section {
+		margin-top: 0;
+		margin-bottom: 40px;
+		gap: 50px;
+	}
+
+	.contact-form__fields {
+		flex-direction: column;
+		gap: 50px;
+	}
+	.contact-form__inputs {
+		gap: 40px;
 	}
 }
 
