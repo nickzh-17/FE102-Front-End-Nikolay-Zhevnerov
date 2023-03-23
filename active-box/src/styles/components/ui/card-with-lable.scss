@@ -1,7 +1,7 @@
 .works-section__card {
 	position: relative;
 	z-index: 10;
-	overflow: hidden;
+	cursor: pointer;
 
 	img {
 		border: 1px solid $white;
@@ -9,12 +9,14 @@
 
 	.label {
 		width: 100%;
-		height: 0;
+		height: 100%;
 		position: absolute;
-		bottom: 0;
+		top: 0;
 
-		transition: all 0.8s;
 		opacity: 0;
+		background: $red;
+
+		transition: opacity 0.5s;
 
 		@include fl-col-gap(2rem);
 		justify-content: center;
@@ -29,12 +31,11 @@
 		.text {
 			@include font-text;
 			color: $white;
+			text-align: center;
 		}
 	}
 
 	&:hover .label {
-		background: $red;
-		height: 100%;
 		opacity: 0.8;
 	}
 
