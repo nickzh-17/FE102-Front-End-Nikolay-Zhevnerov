@@ -1,0 +1,41 @@
+.team-section__card {
+	@include fl-col-gap;
+
+	.info {
+		@include fl-col-gap;
+		padding: 2rem 0 1.5rem;
+
+		.name {
+			@include font-title;
+			font-weight: 700;
+			color: $black;
+		}
+
+		.position {
+			@include font-text;
+			color: $red;
+			text-transform: uppercase;
+
+			padding: 0.5rem 0 1rem;
+		}
+
+		.about {
+			@include font-text;
+			color: $gray;
+		}
+	}
+
+	@media screen and (max-width: $mobile-max) {
+		.info {
+			padding: 1.5rem 0 3.5rem;
+
+			.position {
+				padding: 0.5rem 0 2.5rem;
+			}
+		}
+	}
+}
+
+.social-links {
+	@include fl-row-gap(0.5rem);
+}

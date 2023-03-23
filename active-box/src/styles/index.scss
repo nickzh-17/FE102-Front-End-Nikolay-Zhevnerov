@@ -9,6 +9,7 @@
 @import 'components/preview.scss';
 @import 'components/features.scss';
 @import 'components/works.scss';
+@import 'components/team.scss';
 
 html {
 	font-family: 'Raleway';
@@ -20,8 +21,9 @@ html {
 	margin: 0 auto;
 }
 
-.pre .features-section,
-.works-section {
+.features-section,
+.works-section,
+.team-section {
 	padding: 3.5rem 0;
 }
 
@@ -35,7 +37,8 @@ html {
 	}
 
 	.features-section,
-	.works-section {
+	.works-section,
+	.team-section {
 		padding: 2.5rem 0;
 	}
 
@@ -49,7 +52,8 @@ html {
 	}
 
 	.features-section,
-	.works-section {
+	.works-section,
+	.team-section {
 		padding: 1.2rem 0;
 	}
 

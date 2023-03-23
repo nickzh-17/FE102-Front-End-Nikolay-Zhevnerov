@@ -1,6 +1,7 @@
 .works-section__card {
 	position: relative;
 	z-index: 10;
+	overflow: hidden;
 
 	img {
 		border: 1px solid $white;
@@ -35,5 +36,9 @@
 		background: $red;
 		height: 100%;
 		opacity: 0.8;
+	}
+
+	&:active .label {
+		background: $dark-red;
 	}
 }

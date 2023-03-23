@@ -1,10 +1,10 @@
-@mixin fl-col-gap($gap) {
+@mixin fl-col-gap($gap: 0px) {
 	display: flex;
 	flex-direction: column;
 	gap: $gap;
 }
 
-@mixin fl-row-gap($gap) {
+@mixin fl-row-gap($gap: 0px) {
 	display: flex;
 	gap: $gap;
 }
