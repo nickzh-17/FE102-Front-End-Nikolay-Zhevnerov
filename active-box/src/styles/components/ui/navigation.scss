@@ -17,8 +17,7 @@
 
 		text-decoration: none;
 
-		&:hover::after,
-		&.selected::after {
+		&:hover::after {
 			content: '';
 
 			display: inline-block;
@@ -28,6 +27,17 @@
 
 			bottom: 0;
 			left: 0;
+		}
+
+		&:active {
+			&::after {
+				border-bottom-color: $dark-red;
+				z-index: 10;
+			}
+
+			.navigation__link-text {
+				color: $dark-red;
+			}
 		}
 	}
 
