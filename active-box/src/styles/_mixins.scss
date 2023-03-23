@@ -4,6 +4,11 @@
 	gap: $gap;
 }
 
+@mixin fl-row-gap($gap) {
+	display: flex;
+	gap: $gap;
+}
+
 @mixin grid-layout($colCount, $rowGap: 0px, $colGap: 0px) {
 	display: grid;
 	grid-template-columns: repeat($colCount, 1fr);

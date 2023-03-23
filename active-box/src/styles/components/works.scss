@@ -1,0 +1,19 @@
+@import './ui/card-with-lable.scss';
+
+.works-section__wrapper {
+	@include grid-layout(4);
+
+	img {
+		width: 25vw;
+	}
+}
+
+@media screen and (max-width: $mobile-max) {
+	.works-section__wrapper {
+		@include grid-layout(2);
+
+		img {
+			width: 50vw;
+		}
+	}
+}

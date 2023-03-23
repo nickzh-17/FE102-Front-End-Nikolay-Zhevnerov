@@ -8,35 +8,52 @@
 @import 'components/header.scss';
 @import 'components/preview.scss';
 @import 'components/features.scss';
+@import 'components/works.scss';
 
 html {
 	font-family: 'Raleway';
+	scroll-behavior: smooth;
 }
 
 .wrapper {
 	width: 1170px;
 	margin: 0 auto;
+}
 
-	@media screen and (max-width: $tablet-max) {
-		width: 984px;
-	}
-	@media screen and (max-width: $mobile-max) {
-		width: 280px;
-	}
+.pre .features-section,
+.works-section {
+	padding: 3.5rem 0;
 }
 
 .features-section {
-	margin-top: 7rem;
-	margin-bottom: 7rem;
+	padding-top: 7rem;
 }
 
 @media screen and (max-width: $tablet-max) {
+	.wrapper {
+		width: 984px;
+	}
+
+	.features-section,
+	.works-section {
+		padding: 2.5rem 0;
+	}
+
 	.features-section {
-		@include mrg-vert(5rem);
+		padding-top: 5rem;
 	}
 }
 @media screen and (max-width: $mobile-max) {
+	.wrapper {
+		width: 280px;
+	}
+
+	.features-section,
+	.works-section {
+		padding: 1.2rem 0;
+	}
+
 	.features-section {
-		@include mrg-vert(2.5rem);
+		padding-top: 2.4rem;
 	}
 }

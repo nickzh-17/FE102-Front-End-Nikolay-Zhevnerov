@@ -1,0 +1,39 @@
+.works-section__card {
+	position: relative;
+	z-index: 10;
+
+	img {
+		border: 1px solid $white;
+	}
+
+	.label {
+		width: 100%;
+		height: 0;
+		position: absolute;
+		bottom: 0;
+
+		transition: all 0.8s;
+		opacity: 0;
+
+		@include fl-col-gap(2rem);
+		justify-content: center;
+		align-items: center;
+
+		.title {
+			@include font-title;
+			color: $white;
+			text-transform: uppercase;
+		}
+
+		.text {
+			@include font-text;
+			color: $white;
+		}
+	}
+
+	&:hover .label {
+		background: $red;
+		height: 100%;
+		opacity: 0.8;
+	}
+}

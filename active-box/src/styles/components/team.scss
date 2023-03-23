@@ -1,0 +1,7 @@
+@import 'ui/team-card.scss';
+
+.team-section__wrapper {
+	padding: 0 1rem;
+
+	@include fl-row-gap(2rem);
+}
