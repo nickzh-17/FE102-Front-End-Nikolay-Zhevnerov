@@ -1,0 +1,42 @@
+@import url('https://fonts.googleapis.com/css2?family=Cardo:ital@1&family=Raleway:wght@400;500;700;900&display=swap');
+
+// Preview Heading font
+@mixin font-heading {
+	font-weight: 900;
+	font-size: 4rem;
+	line-height: 4.5rem;
+
+	@media screen and (max-width: $tablet-max) {
+		font-size: 48px;
+		line-height: 56px;
+	}
+
+	@media screen and (max-width: $mobile-max) {
+		font-size: 36px;
+		line-height: 42px;
+	}
+}
+
+// Title Font
+@mixin font-title {
+	font-weight: 900;
+	font-size: 1.5rem;
+	line-height: 1.75rem;
+
+	@media screen and (max-width: $tablet-max) {
+		font-size: 1.1rem;
+		line-height: 1.3rem;
+	}
+}
+
+// Text Font
+@mixin font-text {
+	font-weight: 400;
+	font-size: 1.1rem;
+	line-height: 1.3rem;
+
+	@media screen and (max-width: $tablet-max) {
+		font-size: 0.9rem;
+		line-height: 1rem;
+	}
+}

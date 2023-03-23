@@ -1,0 +1,42 @@
+@import 'normalize';
+@import 'variables';
+@import 'cdn';
+@import 'mixins';
+
+@import 'components/ui/button.scss';
+
+@import 'components/header.scss';
+@import 'components/preview.scss';
+@import 'components/features.scss';
+
+html {
+	font-family: 'Raleway';
+}
+
+.wrapper {
+	width: 1170px;
+	margin: 0 auto;
+
+	@media screen and (max-width: $tablet-max) {
+		width: 984px;
+	}
+	@media screen and (max-width: $mobile-max) {
+		width: 280px;
+	}
+}
+
+.features-section {
+	margin-top: 7rem;
+	margin-bottom: 7rem;
+}
+
+@media screen and (max-width: $tablet-max) {
+	.features-section {
+		@include mrg-vert(5rem);
+	}
+}
+@media screen and (max-width: $mobile-max) {
+	.features-section {
+		@include mrg-vert(2.5rem);
+	}
+}

@@ -1,17 +1,137 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="utf-8" />
-  <title>My First Parcel App</title>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="styles/index.scss" />
-
+  <link rel="icon" href="favicon.png">
+  <title>Active Box</title>
 </head>
 
 <body>
-  <section>
-    <h1>Hello, World!</h1>
+  <header class="header">
+    <div class="header__wrapper wrapper">
+      <a href="#">
+        <img class="header__logo" src="./assets/logo.svg" alt="logo">
+      </a>
+
+      <nav class="navigation">
+        <a class="navigation__link selected" href="#features">
+          <span class="navigation__link-text">Features</span>
+        </a>
+
+        <a class="navigation__link" href="#works">
+          <span class="navigation__link-text">Works</span>
+        </a>
+
+        <a class="navigation__link" href="#ourTeam">
+          <span class="navigation__link-text">Our Team</span>
+        </a>
+
+        <a class="navigation__link" href="#testimonials">
+          <span class="navigation__link-text">Testimonials</span>
+        </a>
+
+        <a class="navigation__link" href="#download">
+          <span class="navigation__link-text">Download</span>
+        </a>
+      </nav>
+
+      <button class='burger__button burger__button--opened' type='button'>
+        <div class='line top-line'></div>
+        <div class='line middle-line'></div>
+        <div class='line bottom-line'></div>
+      </button>
+
+    </div>
+  </header>
+
+  <section class="preview-section">
+    <div class="preview-section__wrapper wrapper">
+      <div class="preview__content">
+        <h1 class="preview__heading">Your Favorite One Page Multi Purpose Template</h1>
+        <p class="preview__text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent commodo cursus magna
+          vel
+          scelerisque nisl consectetur et.</p>
+      </div>
+      <button class="button preview__button">find out more</button>
+
+    </div>
   </section>
+
+  <section class="features-section">
+    <div class="features-section__wrapper wrapper">
+
+      <div class="features-section__card">
+        <img src="./assets/features-icons/icon_1.svg" alt="feature icon" />
+        <div class="card__info">
+
+          <h3 class="title">Easily Customised</h3>
+          <p class="text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+            mollis
+            ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+      </div>
+
+      <div class="features-section__card">
+        <img src="./assets/features-icons/icon_2.svg" alt="feature icon" />
+        <div class="card__info">
+
+          <h3 class="title">Responsive REady</h3>
+          <p class="text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+            mollis
+            ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+      </div>
+
+      <div class="features-section__card">
+        <img src="./assets/features-icons/icon_3.svg" alt="feature icon" />
+        <div class="card__info">
+
+          <h3 class="title">Modern Design</h3>
+          <p class="text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+            mollis
+            ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+      </div>
+
+      <div class="features-section__card">
+        <img src="./assets/features-icons/icon_4.svg" alt="feature icon" />
+        <div class="card__info">
+
+          <h3 class="title">Clean Code</h3>
+          <p class="text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+            mollis
+            ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+      </div>
+
+      <div class="features-section__card">
+        <img src="./assets/features-icons/icon_5.svg" alt="feature icon" />
+        <div class="card__info">
+          <h3 class="title">Ready to Ship</h3>
+          <p class="text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+            mollis
+            ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+      </div>
+
+      <div class="features-section__card">
+        <img src="./assets/features-icons/icon_6.svg" alt="feature icon" />
+        <div class="card__info">
+
+          <h3 class="title">Download for Free</h3>
+          <p class="text">Cras justo odio, dapibus ac facilisis in, egestas eget quam. Nullam quis risus eget urna
+            mollis
+            ornare vel eu leo. Donec ullamcorper nulla non metus auctor fringilla.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
   <script type="module" src="js/index.js"></script>
 </body>
 

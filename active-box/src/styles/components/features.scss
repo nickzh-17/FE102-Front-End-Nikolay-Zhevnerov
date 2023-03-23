@@ -1,0 +1,62 @@
+.features-section__wrapper {
+	@include grid-layout(3, 5.5rem, 2rem);
+}
+
+.features-section__card {
+	@include fl-col-gap(4rem);
+	align-items: center;
+	text-align: center;
+
+	img {
+		width: 6rem;
+	}
+
+	.card__info {
+		@include fl-col-gap(2.5rem);
+
+		.title {
+			@include font-title;
+			color: $black;
+			text-transform: uppercase;
+		}
+		.text {
+			@include font-text;
+			color: $gray;
+		}
+	}
+}
+
+@media screen and (max-width: $tablet-max) {
+	.features-section__wrapper {
+		gap: 3rem 1.2rem;
+	}
+
+	.features-section__card {
+		gap: 3rem;
+
+		img {
+			width: 5rem;
+		}
+
+		.card__info {
+			gap: 1rem;
+		}
+	}
+}
+@media screen and (max-width: $mobile-max) {
+	.features-section__wrapper {
+		@include grid-layout(1, 2.5rem);
+	}
+
+	.features-section__card {
+		gap: 2.5rem;
+
+		img {
+			width: 4.5rem;
+		}
+
+		.card__info {
+			gap: 0.8rem;
+		}
+	}
+}

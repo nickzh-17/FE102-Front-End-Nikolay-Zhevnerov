@@ -1,0 +1,49 @@
+@import 'ui/burger.scss';
+@import 'ui/navigation.scss';
+
+.header {
+	height: 60px;
+	width: 100%;
+	margin-top: 2.2rem;
+
+	background: transparent;
+	position: absolute;
+	top: 0;
+	z-index: 10;
+
+	@media screen and (max-width: $mobile-max) {
+		margin-top: 1.2rem;
+	}
+}
+
+.header__wrapper {
+	position: relative;
+	height: inherit;
+
+	display: flex;
+	justify-content: space-between;
+	align-items: flex-start;
+
+	&::after {
+		content: '';
+
+		display: inline-block;
+		position: absolute;
+		width: 100%;
+		border-bottom: 1px solid $nav-gray;
+
+		bottom: 0;
+		left: 0;
+
+		@media screen and (max-width: $mobile-max) {
+			content: none;
+		}
+	}
+}
+.header__logo {
+	width: 11rem;
+
+	@media screen and (max-width: $mobile-max) {
+		width: 6rem;
+	}
+}

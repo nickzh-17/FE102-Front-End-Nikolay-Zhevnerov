@@ -1,0 +1,42 @@
+.navigation {
+	display: flex;
+	@media screen and (max-width: $mobile-max) {
+		display: none;
+	}
+
+	height: 100%;
+
+	&__link {
+		position: relative;
+		height: 100%;
+		width: 134px;
+
+		display: flex;
+		justify-content: center;
+		align-items: flex-start;
+
+		text-decoration: none;
+
+		&:hover::after,
+		&.selected::after {
+			content: '';
+
+			display: inline-block;
+			position: absolute;
+			width: 100%;
+			border-bottom: 5px solid $nav-gray;
+
+			bottom: 0;
+			left: 0;
+		}
+	}
+
+	&__link-text {
+		font-family: 'Raleway';
+		text-transform: uppercase;
+		font-weight: 700;
+		font-size: 13px;
+		line-height: 15px;
+		color: $white;
+	}
+}

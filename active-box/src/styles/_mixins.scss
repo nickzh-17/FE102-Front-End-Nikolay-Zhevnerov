@@ -1,0 +1,16 @@
+@mixin fl-col-gap($gap) {
+	display: flex;
+	flex-direction: column;
+	gap: $gap;
+}
+
+@mixin grid-layout($colCount, $rowGap: 0px, $colGap: 0px) {
+	display: grid;
+	grid-template-columns: repeat($colCount, 1fr);
+	gap: $rowGap $colGap;
+}
+
+@mixin mrg-vert($mrg) {
+	margin-top: $mrg;
+	margin-bottom: $mrg;
+}
