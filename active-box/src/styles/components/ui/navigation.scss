@@ -1,8 +1,5 @@
 .navigation {
 	display: flex;
-	@media screen and (max-width: $mobile-max) {
-		display: none;
-	}
 
 	height: 100%;
 

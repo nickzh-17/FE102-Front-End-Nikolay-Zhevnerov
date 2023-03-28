@@ -5,6 +5,7 @@
 	.testimonials__card {
 		background: $slider-bg;
 		display: flex;
+		cursor: pointer;
 
 		.image {
 			width: 50%;
@@ -32,8 +33,6 @@
 
 @media screen and (max-width: $mobile-max) {
 	.testimonials-section__wrapper {
-		// max-width: $mobile-min;
-
 		.testimonials__card {
 			@include fl-col-gap;
 

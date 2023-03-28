@@ -1,0 +1,12 @@
+@import 'burger-button.scss';
+@import 'burger-body.scss';
+
+.burger {
+	display: none;
+}
+
+@media screen and (max-width: $mobile-max) {
+	.burger {
+		display: flex;
+	}
+}

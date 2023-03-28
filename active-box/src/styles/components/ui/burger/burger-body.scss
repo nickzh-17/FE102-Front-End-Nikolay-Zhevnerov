@@ -1,0 +1,44 @@
+.burger__body {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	background: red;
+
+	transition: height 0.5s;
+	height: 0rem;
+	overflow: hidden;
+
+	background: url(../assets/preview-eff.png);
+	background-size: 100% cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+
+	&.opened {
+		height: 36rem;
+
+		.container {
+			padding-top: 6rem;
+			.navigation {
+				opacity: 1;
+			}
+		}
+	}
+
+	.container {
+		padding-top: 0rem;
+		transition: all 0.8s;
+		.navigation {
+			display: flex;
+			@include fl-col-gap(3rem);
+			align-items: flex-start;
+			text-align: left;
+			transition: all 0.8s;
+			opacity: 0;
+
+			.navigation__link {
+				justify-content: flex-start;
+			}
+		}
+	}
+}
