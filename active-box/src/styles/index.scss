@@ -10,6 +10,9 @@
 @import 'components/features.scss';
 @import 'components/works.scss';
 @import 'components/team.scss';
+@import 'components/testimonials.scss';
+@import 'components/download.scss';
+@import 'components/footer.scss';
 
 html {
 	font-family: 'Raleway';
@@ -23,12 +26,17 @@ html {
 
 .features-section,
 .works-section,
-.team-section {
+.team-section,
+.download-section,
+.testimonials-section {
 	padding: 3.5rem 0;
 }
 
 .features-section {
 	padding-top: 7rem;
+}
+.testimonials-section {
+	padding-bottom: 7rem;
 }
 
 @media screen and (max-width: $tablet-max) {
@@ -38,12 +46,17 @@ html {
 
 	.features-section,
 	.works-section,
-	.team-section {
+	.team-section,
+	.download-section,
+	.testimonials-section {
 		padding: 2.5rem 0;
 	}
 
 	.features-section {
 		padding-top: 5rem;
+	}
+	.testimonials-section {
+		padding-bottom: 5rem;
 	}
 }
 
@@ -54,11 +67,16 @@ html {
 
 	.features-section,
 	.works-section,
-	.team-section {
+	.team-section,
+	.download-section,
+	.testimonials-section {
 		padding: 1.2rem 0;
 	}
 
 	.features-section {
 		padding-top: 2.4rem;
+	}
+	.testimonials-section {
+		padding-bottom: 2.4rem;
 	}
 }

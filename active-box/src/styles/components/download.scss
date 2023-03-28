@@ -1,0 +1,36 @@
+.download-section__wrapper {
+	@include fl-col-gap(3rem);
+	align-items: center;
+	text-align: center;
+
+	.info {
+		@include fl-col-gap(1.5rem);
+	}
+	.title {
+		@include font-download-title;
+		color: $black;
+	}
+	.text {
+		@include font-download-text;
+
+		text-transform: uppercase;
+		color: $black;
+	}
+}
+
+@media screen and (max-width: $tablet-max) {
+	.download-section__wrapper {
+		gap: 2.5rem;
+		.info {
+			gap: 1rem;
+		}
+	}
+}
+@media screen and (max-width: $mobile-max) {
+	.download-section__wrapper {
+		gap: 0.8rem;
+		.info {
+			gap: 1.5rem;
+		}
+	}
+}

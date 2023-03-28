@@ -40,3 +40,55 @@
 		line-height: 1rem;
 	}
 }
+
+// Download title font
+@mixin font-download-title {
+	font-weight: 500;
+	font-size: 2rem;
+	line-height: 2.2rem;
+
+	@media screen and (max-width: $tablet-max) {
+		font-size: 1.5rem;
+		line-height: 1.8rem;
+	}
+	@media screen and (max-width: $mobile-max) {
+		font-size: 1.1rem;
+		line-height: 1.3rem;
+	}
+}
+
+// Download text font
+@mixin font-download-text {
+	font-weight: 700;
+	font-size: 1.1rem;
+	line-height: 1.3rem;
+
+	@media screen and (max-width: $tablet-max) {
+		font-size: 0.9rem;
+		line-height: 1rem;
+	}
+	@media screen and (max-width: $mobile-max) {
+		font-size: 0.8rem;
+		line-height: 1rem;
+	}
+}
+
+// Quote font
+@mixin font-quote {
+	font-family: 'Cardo';
+	font-weight: 400;
+	font-size: 2.2rem;
+	line-height: 3rem;
+
+	@media screen and (max-width: $tablet-max) {
+		font-size: 1.5rem;
+		line-height: 2rem;
+	}
+}
+
+// Quote text font
+@mixin font-quote-text {
+	font-weight: 700;
+	font-size: 0.8rem;
+	line-height: 1rem;
+}
